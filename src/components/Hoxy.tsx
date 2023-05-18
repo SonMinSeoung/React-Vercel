@@ -1,10 +1,10 @@
 import React from "react";
-import { unstable_HistoryRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 
 interface messageLinkStyles {
     display : string;
-    textAlign : string;
     background : string;
     textTransform : string;
     textDecoration : string;
@@ -15,7 +15,6 @@ interface messageLinkStyles {
 function Hoxy(){
     const messageLinkStyles: messageLinkStyles = {
         display: 'block',
-        textAlign: 'center',
         background: '#039be5',
         textTransform: 'uppercase',
         textDecoration: 'none',
@@ -25,6 +24,10 @@ function Hoxy(){
       };
       return(
         <>
+        <div>
+          <Link to="/">home 안가면 Gpt 대가리망치ㅜㅃ갬</Link>
+          <Link to="/error">home 안가면 Gpt </Link>
+        </div>
         </>
       )
 }

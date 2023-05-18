@@ -16,7 +16,6 @@ root.render(
         <Route path="/error" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
-    <Hoxy> 이렇게하면 밑에다 쓸수있는거니?</Hoxy>
   </React.StrictMode>
 );
 const button = ReactDOM.createRoot(document.getElementById('button'));
