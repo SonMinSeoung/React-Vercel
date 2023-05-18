@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Navigation } from 'react-router-dom';
+import  Navigation  from './components/Navigation.tsx';
 
 function App() {
   return (
