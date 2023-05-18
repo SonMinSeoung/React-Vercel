@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage';
 import Hoxy from './components/Hoxy';
+import { User } from 'firebase/auth';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
