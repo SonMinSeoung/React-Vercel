@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import  Navigation  from './components/Navigation';
 import HomePage from './components/HomePage';
-import { useNavigate } from 'react-router-dom';
+import { BrowserRouter, useNavigate } from 'react-router-dom';
 
 
 function App() {
@@ -13,11 +13,10 @@ function App() {
     navigate(path);
   }
   return (
-    <div className="App">
-      <Navigation />
-      <a onClick={() => handleClick('/')}>  home </a>
-      <a onClick={() => handleClick('/error')} >error </a>
-    </div>
+    <div>
+    <Link to="/">Go to Path</Link>
+    <Link to="/error">Error</Link>
+  </div>
   );
 }
 
