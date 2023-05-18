@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage';
-import Hoxy from './components/Hoxy';
+import Hoxy from './components/EventPage';
 import { User } from 'firebase/auth';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +14,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/event" element={<EventPage />} />
         <Route path="/error" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>

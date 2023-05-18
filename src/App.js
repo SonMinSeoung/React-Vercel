@@ -1,22 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import  Navigation  from './components/Navigation';
-import HomePage from './components/HomePage';
 import { BrowserRouter, useNavigate, Link } from 'react-router-dom';
+import { AuthProvider } from './Context/AuthContext';
+import Navigation from './components/\bNavigation';
 
 
 function App() {
-  const navigate = useNavigate();
-  const handleClick = (path,e) =>{
-    e.preventDefault();
-    navigate(path);
-  }
   return (
-    <div>
-    <Link to="/">Go to Path</Link>
-    <Link to="/error">Error</Link>
-  </div>
+    <AuthProvider>
+      <Navigation/>
+        <Outlet />
+    </AuthProvider>
   );
 }
 
