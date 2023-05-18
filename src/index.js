@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage';
-import HomePage from './components/HomePage';
+import Hoxy from './components/Hoxy';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,5 +18,11 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+const button = ReactDOM.createRoot(document.getElementById('button'));
+button.render(
+  <React.StrictMode>
+    <Hoxy />
+  </React.StrictMode>
+)
 
 reportWebVitals();
