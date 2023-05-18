@@ -18,11 +18,6 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
-const button = ReactDOM.createRoot(document.getElementById('button'));
-button.render(
-  <React.StrictMode>
-    <Hoxy />
-  </React.StrictMode>
-)
+
 
 reportWebVitals();
