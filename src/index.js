@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter } from 'react-router-dom';
+import { BrowserRouter, createBrowserRouter } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage';
 import HomePage from './components/HomePage';
 
@@ -20,7 +20,9 @@ const router = createBrowserRouter({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    {router}
+    </BrowserRouter>
   </React.StrictMode>
 );
 
